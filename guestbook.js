@@ -39,6 +39,7 @@ const guestbook = {
   // retrieve entries and update the UI
   function loadEntries() {
     console.log('Loading entries...');
+    console.log(guestbook.get());
     $('#entries').html('Loading entries...');
     guestbook.get().done(function(result) {
       if (!result.entries) {
